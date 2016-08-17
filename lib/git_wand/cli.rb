@@ -78,7 +78,7 @@ module GitWand
         search_config_paths = SEARCH_CONFIG_PATHS.map do |relative_path|
           File.expand_path(relative_path)
         end
-        config_path = SEARCH_CONFIG_PATHS.find {|path| File.exists?(path)}
+        config_path = search_config_paths.find {|path| File.exists?(path)}
         if !config_path
           return {
             status: :config_not_found,
