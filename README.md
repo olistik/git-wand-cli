@@ -1,4 +1,4 @@
-# GitWand::Cli
+# GitWand::CLI
 
 Command line interface for [GitWand](https://github.com/olistik/git_wand), a Ruby client for the GitHub API.
 
@@ -13,21 +13,21 @@ Install the Gem:
 Self-explanatory:
 
 ```shell
-ಠ_ಠ git-wand current_user_info
+ಠ_ಠ git-wand current-user-info
 [success] Current user info
 - username: olistik
 - profile URL: https://github.com/olistik
 ```
 
 ```shell
-ಠ_ಠ ./git-wand create foo
+ಠ_ಠ ./git-wand --create-repository foo
 [success] Repository foo created
 - HTML URL: https://github.com/olistik/foo
 - SSH URL: git@github.com:olistik/foo.git
 ```
 
 ```shell
-ಠ_ಠ ./git-wand delete foo
+ಠ_ಠ ./git-wand --delete-repository foo
 [success] Repository foo deleted
 ```
 
@@ -39,7 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/git_wand-cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/olistik/git_wand-cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
