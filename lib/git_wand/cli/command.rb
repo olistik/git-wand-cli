@@ -11,7 +11,7 @@ module GitWand
         when :current_user_info
           CurrentUserInfo.perform(client: client)
         when :create_repository
-          CreateRepository.perform(client: client, repository_name: arguments[:repository_name])
+          CreateRepository.perform(client: client, repository_name: arguments[:repository_name], private: arguments[:private])
         when :delete_repository
           DeleteRepository.perform(client: client, repository_name: arguments[:repository_name])
         else

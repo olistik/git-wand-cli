@@ -24,11 +24,20 @@ Self-explanatory:
 [success] Repository foo created
 - HTML URL: https://github.com/olistik/foo
 - SSH URL: git@github.com:olistik/foo.git
+- Visibility: Public
 ```
 
 ```shell
 ಠ_ಠ ./git-wand --delete-repository foo
 [success] Repository foo deleted
+```
+
+```shell
+ಠ_ಠ ./git-wand --create-repository foo --private
+[success] Repository foo created
+- HTML URL: https://github.com/olistik/foo
+- SSH URL: git@github.com:olistik/foo.git
+- Visibility: Private
 ```
 
 ## Development

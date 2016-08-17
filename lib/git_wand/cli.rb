@@ -15,6 +15,7 @@ module GitWand
 
     def self.perform(options: [])
       arguments = {
+        private: false,
       }
 
       opt_parser = OptionParser.new do |opts|
@@ -27,6 +28,10 @@ module GitWand
         opts.on("--create-repository REPOSITORY_NAME", "creates a repository with the given name, for the current user") do |repository_name|
           arguments[:command] = :create_repository
           arguments[:repository_name] = repository_name
+        end
+
+        opts.on("--private", "when creating a repository, sets it as private") do
+          arguments[:private] = true
         end
 
         opts.on("--delete-repository REPOSITORY_NAME", "delete a repository with the given name, owned by the current user") do |repository_name|
